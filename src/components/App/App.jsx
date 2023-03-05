@@ -20,6 +20,8 @@ import LandingPage from '../LandingPage/LandingPage';
 import LoginPage from '../LoginPage/LoginPage';
 import RegisterPage from '../RegisterPage/RegisterPage';
 import Spectacle from '../Spectacle/Spectacle';
+import RevealHome from '../Reveal/RevealHome';
+import RevealDemo from '../Reveal/Reveal';
 
 import './App.css';
 
@@ -76,6 +78,22 @@ function App() {
             path="/spectacle"
           >
             <Spectacle />
+          </ProtectedRoute>
+
+          <ProtectedRoute
+            // logged in shows InfoPage else shows LoginPage
+            exact
+            path="/revealHome"
+          >
+            <RevealHome />
+          </ProtectedRoute>
+
+          <ProtectedRoute
+            // logged in shows InfoPage else shows LoginPage
+            exact
+            path="/revealDemo"
+          >
+            <RevealDemo />
           </ProtectedRoute>
 
           <Route

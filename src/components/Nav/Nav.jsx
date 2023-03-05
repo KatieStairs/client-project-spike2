@@ -43,6 +43,14 @@ function Nav() {
         <Link className="navLink" to="/spectacle">
           Spectacle
         </Link>
+
+        <Link className="navLink" to="/revealHome">
+          Reveal.js Home
+        </Link>
+
+        <Link className="navLink" to="/revealDemo">
+          Reveal.js Demo
+        </Link>
       </div>
     </div>
   );
